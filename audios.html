@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Pàgina que contindrà un llistat d'audios -->
+
+        <meta charset="UTF-8" /> <!-- Codificació de la pagina-->
+        <title>Àudios</title> <!-- Títol de la pàgina -->
+        <link rel="stylesheet" href="./css/estils.css">
+    </head>
+
+    <body;"> <!-- Amb l'atribut style indicam que el fons sigui blanc, per que es vegi sempre d'aquest color -->
+        
+        <!-- Element semàntic and etiqueta <header> que estirà adalt de tot de la pàgina i contindrà un menú de tots els enllaços, una 
+            capçalera i una imatge -->
+
+        <header>
+            
+            <!-- Element semàntic per a la navegació del lloc web -->
+
+            <nav>
+                <!-- Llista ordenada que farà de menú de navegació, i cada element de la llista ens redigira (etiqueta <a>) a una pàgina web 
+                diferent del nostre lloc web-->
+            
+                <ul class="llistanav">
+                    <li><a href="./inici.html">Inici</a></li>
+                    <li><a href="./audios.html" >Àudios</a></li>
+                    <li><a href="./videos.html" >Vídeos</a></li>
+                    <li><a href="./taules.html" >Taules</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Audios mitjançant etiqueta <audio> amb atributs src per indicar la direcció de l'audio i controls per poder aturar o continuar
+                la reproducció de l'audi, com <audio> és un element de línea i volem cada audio en una linea diferent, utilitzarem <br> per 
+                fer un salt de linea-->
+        
+            <!-- En els primers dos elements cridam directament l'arxiu en .mp3, en el tercer, probam primer si està la versió en .mp3, si no ho està
+            llavors cercarem la versió en .ogg -->
+            <audio src="./audio/documentary.mp3" controls></audio><br>
+            <audio src="./audio/inspirational.mp3" controls></audio><br>
+            <audio controls> <source src="./audio/blueBlood.mp3">
+                    <source src="./audio/blueBlood.ogg">
+            </audio>
+
+            <!-- Element semàntic <footer> que estirà abaig de la pàgina web i tindrà informació sobre el creador del lloc web -->
+            <footer>
+                <b>Pàgina web creada per Joaquín Francisco Comas Herrero </b><br>
+                <address > <a href="mailto:jcomasherrero@cifpfbmoll.eu" >Contacte</a></address>
+
+            </footer>
+        </main>
+    </body>
+</html>
